@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <h1 id="title">Horror Films Survey</h1>
+    <p id="description">This survey is for collecting data from all horror film lovers from around the world</p>
+
+    <form id="survey-form" action="index.html" method="post">
+      <label for="name" id="name-label">Name:
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </label>
+      <br>
+      <label for="email" id="email-label">Email:
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </label>
+      <br>
+      <label for="number" id="number-label">How much do you like horrors films?(on a scale of 10):
+        <input type="number" id="number" placeholder="0- Hate , 5 - Meh, 10 - Love" min="0" max="10">
+      </label>
+      <br>
+      <label for="dropdown">Which of these have you watched?
+        <select id="dropdown">
+          <option value="friday-the-13th">Friday the 13th (1980)</option>
+          <option value="nightmare-on-elm-street">A Nightmare on Elm Street (1984)</option>
+          <option value="halloween">Halloween (1978)</option>
+          <option value="the-shining">The Shining (1980)</option>
+          <option value="none">None</option>
+        </select></label>
+        <br>
+        <label for="groupbox">Which day is best suitable for watching horror Films? <br>
+          <input type="radio" name="day-week" value="monday" id="groupbox"> <span>Monday</span>
+          <input type="radio" name="day-week" value="tuesday" id="groupbox"> <span>Tuesday</span>
+          <input type="radio" name="day-week" value="wednesday" id="groupbox"> <span>Wednesday</span>
+          <input type="radio" name="day-week" value="thursday" id="groupbox"> <span>Thursday</span>
+          <input type="radio" name="day-week" value="friday" id="groupbox"> <span>Friday</span>
+          <input type="radio" name="day-week" value="saturday" id="groupbox"> <span>Saturday</span>
+          <input type="radio" name="day-week" value="sunday" id="groupbox"> <span>Sunday</span>
+        </label>
+        <br>
+        <label for="checkbox">Who do you enjoy watching films with? <br>
+          <input type="checkbox" name="member" id="check-box" value="family"> Family
+          <input type="checkbox" name="member" id="check-box" value="friends"> Friends
+          <input type="checkbox" name="member" id="check-box" value="best-friend"> Best-Friend
+          <input type="checkbox" name="member" id="check-box" value="partner"> Partner
+          <input type="checkbox" name="member" id="check-box" value="alone"> Alone
+
+        </label>
+        <br>
+        <textarea name="comments" rows="8" cols="80" placeholder="additional comments"></textarea>
+        <br>
+        <input type="submit" id="submit">
+
+    </form>
+
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8">
+    </script>
+  </body>
+</html>
